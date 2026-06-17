@@ -52,6 +52,7 @@ router.get('/', optionalAuthMiddleware, async (req: AuthenticatedRequest, res) =
       species, 
       tag,
       following,
+      petId,
     } = req.query;
     
     const currentUserId = req.user?.userId;
@@ -79,6 +80,13 @@ router.get('/', optionalAuthMiddleware, async (req: AuthenticatedRequest, res) =
       const postIdsWithTag = db.findMany('postTags', (t: any) => t.tag === tag)
         .map((t: any) => t.post_id);
       posts = posts.filter((p: any) => postIdsWithTag.includes(p.id));
+    }
+    
+    if (petId) {
+      const petIdNum = parseInt(petId as string);
+      const postIdsWithPet = db.findMany('postPets', (pp: any) => pp.pet_id === petIdNum)
+        .map((pp: any) => pp.post_id);
+      posts = posts.filter((p: any) => postIdsWithPet.includes(p.id));
     }
     
     if (sort === 'hot') {

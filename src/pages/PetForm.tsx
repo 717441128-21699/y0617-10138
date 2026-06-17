@@ -30,6 +30,7 @@ export default function PetForm() {
   const isEdit = !!petId;
   const fromRegister = (location.state as any)?.fromRegister;
   const fromProfile = (location.state as any)?.fromProfile;
+  const returnTab = (location.state as any)?.returnTab || 'pets';
 
   const [formData, setFormData] = useState({
     name: '',
@@ -121,7 +122,7 @@ export default function PetForm() {
         if (fromRegister) {
           navigate('/', { replace: true });
         } else if (fromProfile) {
-          navigate(`/profile/${fromProfile}`, { replace: true });
+          navigate(`/profile/${fromProfile}?tab=${returnTab}`, { replace: true });
         } else {
           navigate('/pets', { replace: true });
         }
@@ -150,7 +151,7 @@ export default function PetForm() {
       <div className="max-w-2xl mx-auto space-y-6">
         <div className="flex items-center gap-4">
           <button
-            onClick={() => navigate(fromRegister ? '/' : (fromProfile ? `/profile/${fromProfile}` : (isEdit && petId ? `/pets/${petId}` : '/pets')), { replace: true })}
+            onClick={() => navigate(fromRegister ? '/' : (fromProfile ? `/profile/${fromProfile}?tab=${returnTab}` : (isEdit && petId ? `/pets/${petId}` : '/pets')), { replace: true })}
             className="p-2 hover:bg-white rounded-full transition-colors"
           >
             <ArrowLeft className="w-5 h-5 text-neutral-600" />
