@@ -117,7 +117,7 @@ export default function PostCard({ post, onUpdate }: PostCardProps) {
           </button>
         </div>
         
-        <Link to={`/square/${post.id}`}>
+        <Link to={`/post/${post.id}`}>
           <p className="text-neutral-700 leading-relaxed mb-4 whitespace-pre-wrap">
             {post.content}
           </p>
@@ -190,7 +190,7 @@ export default function PostCard({ post, onUpdate }: PostCardProps) {
           </motion.button>
           
           <Link 
-            to={`/square/${post.id}`}
+            to={`/post/${post.id}`}
             className="flex items-center gap-2 px-4 py-2 rounded-full hover:bg-blue-50 transition-colors group"
           >
             <MessageCircle className="w-5 h-5 text-neutral-400 group-hover:text-blue-400" />

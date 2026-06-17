@@ -8,7 +8,7 @@ import {
 import Layout from '../components/Layout';
 import { qaApi } from '../api';
 import type { Question } from '../types';
-import { getQaCategoryName, timeAgo } from '../utils';
+import { getQaCategoryName, timeAgo, formatDateTime } from '../utils';
 import { useAuthStore } from '../store/auth';
 
 export default function QADetail() {
@@ -157,6 +157,7 @@ export default function QADetail() {
                 <span className="flex items-center gap-1">
                   <Clock className="w-4 h-4" />
                   {timeAgo(question.createdAt)}
+                  <span className="text-neutral-400 text-xs">· {formatDateTime(question.createdAt)}</span>
                 </span>
                 <span className="flex items-center gap-1">
                   <Eye className="w-4 h-4" />
@@ -256,7 +257,9 @@ export default function QADetail() {
                               认证兽医
                             </span>
                           )}
-                          <div className="text-xs text-neutral-400">{timeAgo(answer.createdAt)}</div>
+                          <div className="text-xs text-neutral-400">
+                            {timeAgo(answer.createdAt)} · {formatDateTime(answer.createdAt)}
+                          </div>
                         </div>
                       </div>
 

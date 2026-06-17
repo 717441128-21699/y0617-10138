@@ -78,7 +78,7 @@ router.get('/weight', authMiddleware, async (req: AuthenticatedRequest, res) => 
       records = records.filter((r: any) => r.pet_id === parseInt(petId as string));
     }
     
-    records.sort((a: any, b: any) => new Date(a.date).getTime() - new Date(b.date).getTime());
+    records.sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime());
     
     const formattedRecords = records.map((r: any) => {
       const pet = pets.find((p: any) => p.id === r.pet_id);

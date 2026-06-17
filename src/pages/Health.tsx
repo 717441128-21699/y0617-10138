@@ -131,7 +131,7 @@ export default function Health() {
   if (!isAuthenticated) return null;
 
   const selectedPet = pets.find(p => p.id === selectedPetId);
-  const weightChartData = weightRecords.map(r => ({
+  const weightChartData = [...weightRecords].reverse().map(r => ({
     date: formatDate(r.date),
     weight: r.weight,
   }));

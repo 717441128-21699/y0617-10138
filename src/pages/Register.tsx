@@ -50,7 +50,7 @@ export default function Register() {
         nickname: formData.nickname,
       });
       login(response.token, response.user);
-      navigate('/pets/create');
+      navigate('/pets/new', { state: { fromRegister: true } });
     } catch (err: any) {
       setError(err.response?.data?.error || '注册失败，请重试');
     } finally {

@@ -5,7 +5,7 @@ import { ArrowLeft, Heart, MessageCircle, Send, CheckCircle } from 'lucide-react
 import Layout from '../components/Layout';
 import { postApi } from '../api';
 import type { Post, Comment } from '../types';
-import { timeAgo, getSpeciesName, getSpeciesColor, formatDate } from '../utils';
+import { timeAgo, getSpeciesName, getSpeciesColor, formatDate, formatDateTime } from '../utils';
 import { useAuthStore } from '../store/auth';
 
 export default function PostDetail() {
@@ -156,6 +156,7 @@ export default function PostDetail() {
                   </div>
                   <div className="flex items-center gap-2 text-sm text-neutral-500">
                     <span>{timeAgo(post.createdAt)}</span>
+                    <span className="text-neutral-400 text-xs">· {formatDateTime(post.createdAt)}</span>
                     {post.pets.length > 0 && (
                       <>
                         <span>·</span>

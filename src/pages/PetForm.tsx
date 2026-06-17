@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Cat, Dog, Bird, Bug, PawPrint, Save, Upload } from 'lucide-react';
 import Layout from '../components/Layout';
@@ -25,8 +25,10 @@ const genderOptions = [
 export default function PetForm() {
   const { petId } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const { isAuthenticated } = useAuthStore();
   const isEdit = !!petId;
+  const fromRegister = (location.state as any)?.fromRegister;
 
   const [formData, setFormData] = useState({
     name: '',
@@ -115,7 +117,11 @@ export default function PetForm() {
           avatar: avatarUrl,
         });
       }
-      navigate('/pets');
+      if (fromRegister) {
+        navigate('/', { replace: true });
+      } else {
+        navigate('/pets');
+      }
     } catch (e: any) {
       alert(e.response?.data?.error || '保存失败，请重试');
     } finally {
@@ -140,16 +146,18 @@ export default function PetForm() {
       <div className="max-w-2xl mx-auto space-y-6">
         <div className="flex items-center gap-4">
           <button
-            onClick={() => navigate('/pets')}
+            onClick={() => navigate(fromRegister ? '/' : (isEdit && petId ? `/pets/${petId}` : '/pets'))}
             className="p-2 hover:bg-white rounded-full transition-colors"
           >
             <ArrowLeft className="w-5 h-5 text-neutral-600" />
           </button>
           <div>
             <h2 className="font-display text-2xl font-bold text-neutral-800">
-              {isEdit ? '编辑宠物档案' : '创建宠物档案'}
+              {isEdit ? '编辑宠物档案' : (fromRegister ? '欢迎加入！创建您的第一只宠物档案' : '创建宠物档案')}
             </h2>
-            <p className="text-neutral-500 text-sm">为您的爱宠建立专属档案</p>
+            <p className="text-neutral-500 text-sm">
+              {fromRegister ? '完成后即可开始分享宠物日常' : '为您的爱宠建立专属档案'}
+            </p>
           </div>
         </div>
 

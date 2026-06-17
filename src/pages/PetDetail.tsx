@@ -5,7 +5,7 @@ import { ArrowLeft, Calendar, Plus, Camera, HeartPulse, Edit2 } from 'lucide-rea
 import Layout from '../components/Layout';
 import { petApi } from '../api';
 import type { Pet } from '../types';
-import { getSpeciesName, getSpeciesColor, formatDate, generatePetImage } from '../utils';
+import { getSpeciesName, getSpeciesColor, formatDate, formatDateTime, generatePetImage } from '../utils';
 import { useAuthStore } from '../store/auth';
 
 export default function PetDetail() {
@@ -173,7 +173,7 @@ export default function PetDetail() {
               <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-200 to-secondary-200"></div>
               
               <div className="space-y-8">
-                {pet.photos.map((photo, idx) => (
+                {[...pet.photos].reverse().map((photo, idx) => (
                   <motion.div
                     key={photo.id}
                     initial={{ opacity: 0, x: -20 }}
@@ -194,7 +194,12 @@ export default function PetDetail() {
                       <div className="p-4">
                         <div className="flex items-center gap-2 text-sm text-neutral-500 mb-2">
                           <Calendar className="w-4 h-4" />
-                          {formatDate(photo.date)}
+                          <span>{formatDate(photo.date)}</span>
+                          {photo.createdAt && (
+                            <span className="text-neutral-400 text-xs">
+                              · {formatDateTime(photo.createdAt)}
+                            </span>
+                          )}
                         </div>
                         {photo.caption && (
                           <p className="text-neutral-700">{photo.caption}</p>
