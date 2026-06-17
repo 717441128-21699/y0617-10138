@@ -53,6 +53,7 @@ function App() {
         <Route path="/nearby/:placeId" element={<PlaceDetail />} />
         
         <Route path="/profile/:userId" element={<Profile />} />
+        <Route path="/profile" element={<Navigate to="/" replace />} />
         
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

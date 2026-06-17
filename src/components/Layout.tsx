@@ -89,7 +89,7 @@ export default function Layout({ children }: LayoutProps) {
                 </motion.button>
                 
                 <div className="flex items-center gap-3">
-                  <NavLink to="/profile" className="flex items-center gap-2 hover:bg-neutral-100 rounded-full px-3 py-1 transition-colors">
+                  <NavLink to={`/profile/${user?.id}`} className="flex items-center gap-2 hover:bg-neutral-100 rounded-full px-3 py-1 transition-colors">
                     <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-primary-200">
                       <img 
                         src={user?.avatar || generateAvatar(user?.id?.toString())} 
@@ -164,7 +164,7 @@ export default function Layout({ children }: LayoutProps) {
             <div className="sticky top-24 space-y-6">
               {isAuthenticated && user && (
                 <div className="bg-white rounded-3xl p-5 shadow-soft">
-                  <div className="flex items-center gap-3 mb-4">
+                  <NavLink to={`/profile/${user.id}`} className="flex items-center gap-3 mb-4 hover:opacity-80 transition-opacity">
                     <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary-200">
                       <img 
                         src={user.avatar || generateAvatar(user.id.toString())} 
@@ -183,7 +183,7 @@ export default function Layout({ children }: LayoutProps) {
                       </div>
                       <div className="text-sm text-neutral-500">{user.points} 积分</div>
                     </div>
-                  </div>
+                  </NavLink>
                   
                   <div className="grid grid-cols-3 gap-2 text-center">
                     <div className="bg-warm-50 rounded-xl p-2">

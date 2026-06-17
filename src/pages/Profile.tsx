@@ -41,7 +41,7 @@ export default function Profile() {
     } else if (activeTab === 'pets') {
       loadUserPets();
     }
-  }, [userId, activeTab]);
+  }, [userId, activeTab, location.key]);
 
   const loadProfile = async () => {
     if (!userId) return;
@@ -283,7 +283,7 @@ export default function Profile() {
                 <p className="text-neutral-500">暂无宠物档案</p>
                 {isOwnProfile && (
                   <button
-                    onClick={() => navigate('/pets/new')}
+                    onClick={() => navigate('/pets/new', { state: { fromProfile: userId } })}
                     className="mt-4 px-5 py-2 bg-primary-500 text-white rounded-xl font-medium hover:bg-primary-600 transition-colors"
                   >
                     创建宠物档案
