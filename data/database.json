@@ -1,0 +1,1238 @@
+{
+  "users": [
+    {
+      "email": "demo@pet.com",
+      "phone": "13800138000",
+      "password_hash": "$2a$10$j/W7oYydtgjvu03f6R.pxeoKssD8p7kGcO8GGCRiXxkTURri8/1S6",
+      "nickname": "爱猫人士",
+      "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20avatar%20portrait%2C%20cartoon%20style%2C%20warm%20colors%2C%20pet%20lover&image_size=square",
+      "bio": "家里有三只猫主子，资深铲屎官",
+      "points": 520,
+      "is_vet": 0,
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.940Z"
+    },
+    {
+      "email": "vet@pet.com",
+      "phone": "13900139000",
+      "password_hash": "$2a$10$2pMX5SFeik.ejmVEntH.Mu1VXJ4dL2fp4S0lU2CbRNFUFy3WZEqm6",
+      "nickname": "李兽医",
+      "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20avatar%20portrait%2C%20cartoon%20style%2C%20warm%20colors%2C%20pet%20lover&image_size=square",
+      "bio": "执业兽医，从业10年，擅长小动物内科",
+      "points": 1280,
+      "is_vet": 1,
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.941Z"
+    },
+    {
+      "email": "doglover@pet.com",
+      "phone": "13700137000",
+      "password_hash": "$2a$10$QCqN85cPHtgLfNdZBk2wBucSFTdEIP5uShsam5ACSTnxeseiSceE.",
+      "nickname": "铲屎官小王",
+      "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20avatar%20portrait%2C%20cartoon%20style%2C%20warm%20colors%2C%20pet%20lover&image_size=square",
+      "bio": "金毛和柯基的铲屎官，热爱户外运动",
+      "points": 360,
+      "is_vet": 0,
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.941Z"
+    },
+    {
+      "email": "birdfan@pet.com",
+      "phone": "13600136000",
+      "password_hash": "$2a$10$mIU.ajzlcQoqzMa56ZYml.ZKG.PfeUGvMiEQvgPdUOopc/a1.IiZS",
+      "nickname": "鹦鹉爱好者",
+      "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20avatar%20portrait%2C%20cartoon%20style%2C%20warm%20colors%2C%20pet%20lover&image_size=square",
+      "bio": "养了5只鹦鹉，专注鸟类饲养15年",
+      "points": 420,
+      "is_vet": 0,
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.942Z"
+    },
+    {
+      "email": "reptile@pet.com",
+      "phone": "13500135000",
+      "password_hash": "$2a$10$Uz61SnhdHlCvrQQNKJlYl.3ecrcR/J93DoasvF99cfNbxmQUuh7BK",
+      "nickname": "爬宠达人",
+      "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20avatar%20portrait%2C%20cartoon%20style%2C%20warm%20colors%2C%20pet%20lover&image_size=square",
+      "bio": "守宫、蛇、蜥蜴都有，爬宠爱好者集合！",
+      "points": 280,
+      "is_vet": 0,
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.942Z"
+    }
+  ],
+  "pets": [
+    {
+      "user_id": 1,
+      "name": "橘子",
+      "species": "cat",
+      "breed": "英国短毛猫",
+      "gender": "male",
+      "birthday": "2022-03-15",
+      "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "bio": "爱吃小鱼干的胖橘，性格慵懒",
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.942Z"
+    },
+    {
+      "user_id": 1,
+      "name": "奶茶",
+      "species": "cat",
+      "breed": "布偶猫",
+      "gender": "female",
+      "birthday": "2023-01-20",
+      "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "bio": "蓝眼睛的小公主，超级粘人",
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.942Z"
+    },
+    {
+      "user_id": 3,
+      "name": "豆豆",
+      "species": "dog",
+      "breed": "金毛寻回犬",
+      "gender": "male",
+      "birthday": "2021-06-10",
+      "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "bio": "阳光大男孩，最爱游泳和接飞盘",
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.943Z"
+    },
+    {
+      "user_id": 3,
+      "name": "汉堡",
+      "species": "dog",
+      "breed": "柯基",
+      "gender": "male",
+      "birthday": "2023-08-05",
+      "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "bio": "小短腿大屁股，走路一摇一摆",
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.943Z"
+    },
+    {
+      "user_id": 4,
+      "name": "皮皮",
+      "species": "bird",
+      "breed": "虎皮鹦鹉",
+      "gender": "male",
+      "birthday": "2022-11-12",
+      "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20bird%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "bio": "会说\"你好\"的话痨小鹦鹉",
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.943Z"
+    },
+    {
+      "user_id": 5,
+      "name": "小龙",
+      "species": "reptile",
+      "breed": "豹纹守宫",
+      "gender": "male",
+      "birthday": "2021-04-20",
+      "avatar": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20reptile%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "bio": "温顺的小守宫，爱吃面包虫",
+      "id": 6,
+      "createdAt": "2026-06-17T10:51:48.943Z"
+    }
+  ],
+  "petPhotos": [
+    {
+      "pet_id": 1,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "刚到家的第一天",
+      "date": "2025-06-17",
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.944Z"
+    },
+    {
+      "pet_id": 1,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "第一次洗澡",
+      "date": "2025-08-21",
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.944Z"
+    },
+    {
+      "pet_id": 1,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "生日派对",
+      "date": "2025-11-29",
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.944Z"
+    },
+    {
+      "pet_id": 1,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "晒太阳的午后",
+      "date": "2026-03-09",
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.944Z"
+    },
+    {
+      "pet_id": 2,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "刚到家的第一天",
+      "date": "2025-06-17",
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.945Z"
+    },
+    {
+      "pet_id": 2,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "第一次洗澡",
+      "date": "2025-08-21",
+      "id": 6,
+      "createdAt": "2026-06-17T10:51:48.945Z"
+    },
+    {
+      "pet_id": 2,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "生日派对",
+      "date": "2025-11-29",
+      "id": 7,
+      "createdAt": "2026-06-17T10:51:48.945Z"
+    },
+    {
+      "pet_id": 2,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "晒太阳的午后",
+      "date": "2026-03-09",
+      "id": 8,
+      "createdAt": "2026-06-17T10:51:48.945Z"
+    },
+    {
+      "pet_id": 3,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "刚到家的第一天",
+      "date": "2025-06-17",
+      "id": 9,
+      "createdAt": "2026-06-17T10:51:48.946Z"
+    },
+    {
+      "pet_id": 3,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "第一次洗澡",
+      "date": "2025-08-21",
+      "id": 10,
+      "createdAt": "2026-06-17T10:51:48.946Z"
+    },
+    {
+      "pet_id": 3,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "生日派对",
+      "date": "2025-11-29",
+      "id": 11,
+      "createdAt": "2026-06-17T10:51:48.946Z"
+    },
+    {
+      "pet_id": 3,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "晒太阳的午后",
+      "date": "2026-03-09",
+      "id": 12,
+      "createdAt": "2026-06-17T10:51:48.947Z"
+    },
+    {
+      "pet_id": 4,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "刚到家的第一天",
+      "date": "2025-06-17",
+      "id": 13,
+      "createdAt": "2026-06-17T10:51:48.947Z"
+    },
+    {
+      "pet_id": 4,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "第一次洗澡",
+      "date": "2025-08-21",
+      "id": 14,
+      "createdAt": "2026-06-17T10:51:48.947Z"
+    },
+    {
+      "pet_id": 4,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "生日派对",
+      "date": "2025-11-29",
+      "id": 15,
+      "createdAt": "2026-06-17T10:51:48.947Z"
+    },
+    {
+      "pet_id": 4,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "晒太阳的午后",
+      "date": "2026-03-09",
+      "id": 16,
+      "createdAt": "2026-06-17T10:51:48.948Z"
+    },
+    {
+      "pet_id": 5,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20bird%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "刚到家的第一天",
+      "date": "2025-06-17",
+      "id": 17,
+      "createdAt": "2026-06-17T10:51:48.948Z"
+    },
+    {
+      "pet_id": 5,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20bird%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "第一次洗澡",
+      "date": "2025-08-21",
+      "id": 18,
+      "createdAt": "2026-06-17T10:51:48.948Z"
+    },
+    {
+      "pet_id": 5,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20bird%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "生日派对",
+      "date": "2025-11-29",
+      "id": 19,
+      "createdAt": "2026-06-17T10:51:48.948Z"
+    },
+    {
+      "pet_id": 5,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20bird%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "晒太阳的午后",
+      "date": "2026-03-09",
+      "id": 20,
+      "createdAt": "2026-06-17T10:51:48.949Z"
+    },
+    {
+      "pet_id": 6,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20reptile%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "刚到家的第一天",
+      "date": "2025-06-17",
+      "id": 21,
+      "createdAt": "2026-06-17T10:51:48.949Z"
+    },
+    {
+      "pet_id": 6,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20reptile%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "第一次洗澡",
+      "date": "2025-08-21",
+      "id": 22,
+      "createdAt": "2026-06-17T10:51:48.949Z"
+    },
+    {
+      "pet_id": 6,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20reptile%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "生日派对",
+      "date": "2025-11-29",
+      "id": 23,
+      "createdAt": "2026-06-17T10:51:48.950Z"
+    },
+    {
+      "pet_id": 6,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20reptile%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "caption": "晒太阳的午后",
+      "date": "2026-03-09",
+      "id": 24,
+      "createdAt": "2026-06-17T10:51:48.950Z"
+    }
+  ],
+  "posts": [
+    {
+      "user_id": 1,
+      "content": "今天橘子和奶茶又打架了，为了抢一个纸箱子🤣 你们说谁赢了？",
+      "like_count": 46,
+      "comment_count": 6,
+      "share_count": 6,
+      "created_at": "2026-06-05T10:51:48.950Z",
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.950Z"
+    },
+    {
+      "user_id": 3,
+      "content": "周末带豆豆和汉堡去郊野公园玩，两个小家伙玩疯了！晚上回家倒头就睡😂",
+      "like_count": 52,
+      "comment_count": 3,
+      "share_count": 4,
+      "created_at": "2026-06-07T10:51:48.953Z",
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.953Z"
+    },
+    {
+      "user_id": 4,
+      "content": "皮皮今天学会了说\"晚安\"！训练了一个月终于有成果了，感动😭",
+      "like_count": 22,
+      "comment_count": 12,
+      "share_count": 0,
+      "created_at": "2026-06-09T10:51:48.957Z",
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.957Z"
+    },
+    {
+      "user_id": 5,
+      "content": "小龙蜕皮完成了！新皮肤超级漂亮，给大家看看～ 守宫蜕皮的时候不要打扰哦",
+      "like_count": 90,
+      "comment_count": 6,
+      "share_count": 2,
+      "created_at": "2026-06-11T10:51:48.958Z",
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.959Z"
+    },
+    {
+      "user_id": 2,
+      "content": "【兽医科普】夏季宠物中暑的识别与急救！🌡️\n\n症状：呼吸急促、牙龈发红、体温升高、精神萎靡\n\n急救：立即移到阴凉处，用湿毛巾擦拭身体，少量多次喂凉水，严重请立即送医！",
+      "like_count": 29,
+      "comment_count": 17,
+      "share_count": 0,
+      "created_at": "2026-06-13T10:51:48.961Z",
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.961Z"
+    },
+    {
+      "user_id": 1,
+      "content": "奶茶今天生日啦！🎂 满2岁了，给她买了小鱼干蛋糕，吃得可开心了～",
+      "like_count": 77,
+      "comment_count": 2,
+      "share_count": 4,
+      "created_at": "2026-06-15T10:51:48.963Z",
+      "id": 6,
+      "createdAt": "2026-06-17T10:51:48.963Z"
+    }
+  ],
+  "postImages": [
+    {
+      "post_id": 1,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "sort_order": 0,
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.951Z"
+    },
+    {
+      "post_id": 1,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "sort_order": 1,
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.951Z"
+    },
+    {
+      "post_id": 2,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "sort_order": 0,
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.953Z"
+    },
+    {
+      "post_id": 2,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "sort_order": 1,
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.954Z"
+    },
+    {
+      "post_id": 2,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20dog%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "sort_order": 2,
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.955Z"
+    },
+    {
+      "post_id": 3,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20bird%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "sort_order": 0,
+      "id": 6,
+      "createdAt": "2026-06-17T10:51:48.957Z"
+    },
+    {
+      "post_id": 4,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20reptile%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "sort_order": 0,
+      "id": 7,
+      "createdAt": "2026-06-17T10:51:48.959Z"
+    },
+    {
+      "post_id": 4,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20reptile%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "sort_order": 1,
+      "id": 8,
+      "createdAt": "2026-06-17T10:51:48.959Z"
+    },
+    {
+      "post_id": 6,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "sort_order": 0,
+      "id": 9,
+      "createdAt": "2026-06-17T10:51:48.963Z"
+    },
+    {
+      "post_id": 6,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cat%20pet%2C%20high%20quality%2C%20warm%20lighting%2C%20professional%20photography&image_size=square_hd",
+      "sort_order": 1,
+      "id": 10,
+      "createdAt": "2026-06-17T10:51:48.963Z"
+    }
+  ],
+  "postTags": [
+    {
+      "post_id": 1,
+      "tag": "猫咪日常",
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.951Z"
+    },
+    {
+      "post_id": 1,
+      "tag": "家有二猫",
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.952Z"
+    },
+    {
+      "post_id": 2,
+      "tag": "狗狗日常",
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.955Z"
+    },
+    {
+      "post_id": 2,
+      "tag": "周末遛狗",
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.956Z"
+    },
+    {
+      "post_id": 3,
+      "tag": "鹦鹉训练",
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.957Z"
+    },
+    {
+      "post_id": 3,
+      "tag": "养宠心得",
+      "id": 6,
+      "createdAt": "2026-06-17T10:51:48.958Z"
+    },
+    {
+      "post_id": 4,
+      "tag": "爬宠日常",
+      "id": 7,
+      "createdAt": "2026-06-17T10:51:48.960Z"
+    },
+    {
+      "post_id": 4,
+      "tag": "养宠知识",
+      "id": 8,
+      "createdAt": "2026-06-17T10:51:48.960Z"
+    },
+    {
+      "post_id": 5,
+      "tag": "兽医科普",
+      "id": 9,
+      "createdAt": "2026-06-17T10:51:48.961Z"
+    },
+    {
+      "post_id": 5,
+      "tag": "夏季养宠",
+      "id": 10,
+      "createdAt": "2026-06-17T10:51:48.962Z"
+    },
+    {
+      "post_id": 5,
+      "tag": "宠物健康",
+      "id": 11,
+      "createdAt": "2026-06-17T10:51:48.962Z"
+    },
+    {
+      "post_id": 6,
+      "tag": "猫咪生日",
+      "id": 12,
+      "createdAt": "2026-06-17T10:51:48.964Z"
+    },
+    {
+      "post_id": 6,
+      "tag": "家有萌宠",
+      "id": 13,
+      "createdAt": "2026-06-17T10:51:48.964Z"
+    }
+  ],
+  "postPets": [
+    {
+      "post_id": 1,
+      "pet_id": 1,
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.952Z"
+    },
+    {
+      "post_id": 1,
+      "pet_id": 2,
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.952Z"
+    },
+    {
+      "post_id": 2,
+      "pet_id": 3,
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.956Z"
+    },
+    {
+      "post_id": 2,
+      "pet_id": 4,
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.956Z"
+    },
+    {
+      "post_id": 3,
+      "pet_id": 5,
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.958Z"
+    },
+    {
+      "post_id": 4,
+      "pet_id": 6,
+      "id": 6,
+      "createdAt": "2026-06-17T10:51:48.960Z"
+    },
+    {
+      "post_id": 6,
+      "pet_id": 2,
+      "id": 7,
+      "createdAt": "2026-06-17T10:51:48.964Z"
+    }
+  ],
+  "likes": [
+    {
+      "post_id": 1,
+      "user_id": 2,
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.953Z"
+    },
+    {
+      "post_id": 2,
+      "user_id": 3,
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.956Z"
+    },
+    {
+      "post_id": 3,
+      "user_id": 4,
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.958Z"
+    },
+    {
+      "post_id": 4,
+      "user_id": 5,
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.961Z"
+    },
+    {
+      "post_id": 5,
+      "user_id": 1,
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.962Z"
+    },
+    {
+      "post_id": 6,
+      "user_id": 2,
+      "id": 6,
+      "createdAt": "2026-06-17T10:51:48.965Z"
+    }
+  ],
+  "comments": [
+    {
+      "post_id": 1,
+      "user_id": 3,
+      "content": "哈哈哈哈太可爱了！我赌橘子赢！",
+      "like_count": 1,
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.966Z"
+    },
+    {
+      "post_id": 1,
+      "user_id": 4,
+      "content": "奶茶好优雅，橘猫肯定打不过",
+      "like_count": 4,
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.966Z"
+    },
+    {
+      "post_id": 2,
+      "user_id": 1,
+      "content": "太幸福了！两个小可爱",
+      "like_count": 6,
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.966Z"
+    },
+    {
+      "post_id": 2,
+      "user_id": 5,
+      "content": "柯基的屁股太好笑了😂",
+      "like_count": 0,
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.967Z"
+    },
+    {
+      "post_id": 3,
+      "user_id": 1,
+      "content": "太聪明了！怎么训练的求教程",
+      "like_count": 8,
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.967Z"
+    },
+    {
+      "post_id": 5,
+      "user_id": 1,
+      "content": "谢谢李医生！收藏了！",
+      "like_count": 1,
+      "id": 6,
+      "createdAt": "2026-06-17T10:51:48.968Z"
+    },
+    {
+      "post_id": 5,
+      "user_id": 3,
+      "content": "专业！我家狗去年差点中暑，太可怕了",
+      "like_count": 7,
+      "id": 7,
+      "createdAt": "2026-06-17T10:51:48.968Z"
+    },
+    {
+      "post_id": 6,
+      "user_id": 2,
+      "content": "生日快乐！要健健康康哦～",
+      "like_count": 5,
+      "id": 8,
+      "createdAt": "2026-06-17T10:51:48.968Z"
+    }
+  ],
+  "follows": [
+    {
+      "follower_id": 1,
+      "following_id": 2,
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.969Z"
+    },
+    {
+      "follower_id": 1,
+      "following_id": 3,
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.969Z"
+    },
+    {
+      "follower_id": 3,
+      "following_id": 1,
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.970Z"
+    },
+    {
+      "follower_id": 4,
+      "following_id": 2,
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.970Z"
+    }
+  ],
+  "questions": [
+    {
+      "user_id": 1,
+      "title": "猫咪最近掉毛严重怎么办？",
+      "content": "橘子最近掉毛特别严重，一摸一手毛，已经换毛季了吗？饮食正常，精神也很好，需要补充什么吗？",
+      "category": "health",
+      "reward_points": 50,
+      "view_count": 128,
+      "accepted_answer_id": 1,
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.970Z"
+    },
+    {
+      "user_id": 3,
+      "title": "柯基怎么训练定点大小便？",
+      "content": "汉堡3个月大了，教了好久还是随地大小便，求有经验的铲屎官分享方法！",
+      "category": "behavior",
+      "reward_points": 30,
+      "view_count": 256,
+      "accepted_answer_id": 3,
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.971Z"
+    },
+    {
+      "user_id": 4,
+      "title": "鹦鹉可以吃什么水果？",
+      "content": "皮皮很爱吃水果，但怕有些水果对它有害，请问哪些水果是安全的？哪些不能吃？",
+      "category": "nutrition",
+      "reward_points": 20,
+      "view_count": 89,
+      "accepted_answer_id": null,
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.971Z"
+    }
+  ],
+  "answers": [
+    {
+      "question_id": 1,
+      "user_id": 2,
+      "content": "您好！猫咪掉毛严重可能有几个原因：\n1. 季节性换毛：春秋季是换毛期，正常现象\n2. 营养问题：可以补充卵磷脂和三文鱼油\n3. 洗澡过勤：破坏皮肤油脂层\n4. 皮肤问题：检查有没有皮屑、红疹\n\n建议每天梳毛，增加 Omega-3 摄入，如果伴随其他症状请及时就医。",
+      "is_accepted": 1,
+      "like_count": 5,
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.972Z"
+    },
+    {
+      "question_id": 1,
+      "user_id": 3,
+      "content": "我家也是英短，换毛季真的是行走的蒲公英！每天梳毛+吃鱼油，感觉掉毛少了一些。另外扫地机器人真的是养宠必备😂",
+      "is_accepted": 0,
+      "like_count": 15,
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.975Z"
+    },
+    {
+      "question_id": 2,
+      "user_id": 1,
+      "content": "我家猫是用诱导剂+零食奖励的方法：\n1. 铺好尿垫，喷上诱导剂\n2. 饭后15分钟抱到尿垫上\n3. 一旦在上面尿了立刻给零食+表扬\n4. 做错了不要打骂，清理干净就行\n\n耐心一点，狗狗很快就会学会的！",
+      "is_accepted": 1,
+      "like_count": 9,
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.976Z"
+    },
+    {
+      "question_id": 3,
+      "user_id": 2,
+      "content": "鹦鹉可以吃的安全水果：苹果（去核）、香蕉、蓝莓、草莓、西瓜（无籽）、橙子少量\n\n禁止食用：牛油果（有毒）、芒果（易过敏）、樱桃（果核有毒）、果核和籽都要去掉\n\n每次不要喂太多，水果糖分较高哦～",
+      "is_accepted": 0,
+      "like_count": 8,
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.976Z"
+    }
+  ],
+  "weightRecords": [
+    {
+      "pet_id": 1,
+      "weight": 4.2,
+      "date": "2026-01-17",
+      "note": "",
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.977Z"
+    },
+    {
+      "pet_id": 1,
+      "weight": 4.5,
+      "date": "2026-02-17",
+      "note": "",
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.978Z"
+    },
+    {
+      "pet_id": 1,
+      "weight": 4.8,
+      "date": "2026-03-17",
+      "note": "",
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.978Z"
+    },
+    {
+      "pet_id": 1,
+      "weight": 5.1,
+      "date": "2026-04-17",
+      "note": "",
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.978Z"
+    },
+    {
+      "pet_id": 1,
+      "weight": 5.3,
+      "date": "2026-05-17",
+      "note": "",
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.979Z"
+    },
+    {
+      "pet_id": 1,
+      "weight": 5.5,
+      "date": "2026-06-17",
+      "note": "最近体重",
+      "id": 6,
+      "createdAt": "2026-06-17T10:51:48.979Z"
+    },
+    {
+      "pet_id": 2,
+      "weight": 2.8,
+      "date": "2026-01-17",
+      "note": "",
+      "id": 7,
+      "createdAt": "2026-06-17T10:51:48.980Z"
+    },
+    {
+      "pet_id": 2,
+      "weight": 3,
+      "date": "2026-02-17",
+      "note": "",
+      "id": 8,
+      "createdAt": "2026-06-17T10:51:48.980Z"
+    },
+    {
+      "pet_id": 2,
+      "weight": 3.2,
+      "date": "2026-03-17",
+      "note": "",
+      "id": 9,
+      "createdAt": "2026-06-17T10:51:48.981Z"
+    },
+    {
+      "pet_id": 2,
+      "weight": 3.5,
+      "date": "2026-04-17",
+      "note": "",
+      "id": 10,
+      "createdAt": "2026-06-17T10:51:48.981Z"
+    },
+    {
+      "pet_id": 2,
+      "weight": 3.6,
+      "date": "2026-05-17",
+      "note": "",
+      "id": 11,
+      "createdAt": "2026-06-17T10:51:48.981Z"
+    },
+    {
+      "pet_id": 2,
+      "weight": 3.7,
+      "date": "2026-06-17",
+      "note": "最近体重",
+      "id": 12,
+      "createdAt": "2026-06-17T10:51:48.982Z"
+    },
+    {
+      "pet_id": 3,
+      "weight": 25,
+      "date": "2026-01-17",
+      "note": "",
+      "id": 13,
+      "createdAt": "2026-06-17T10:51:48.982Z"
+    },
+    {
+      "pet_id": 3,
+      "weight": 27,
+      "date": "2026-02-17",
+      "note": "",
+      "id": 14,
+      "createdAt": "2026-06-17T10:51:48.983Z"
+    },
+    {
+      "pet_id": 3,
+      "weight": 28,
+      "date": "2026-03-17",
+      "note": "",
+      "id": 15,
+      "createdAt": "2026-06-17T10:51:48.983Z"
+    },
+    {
+      "pet_id": 3,
+      "weight": 29,
+      "date": "2026-04-17",
+      "note": "",
+      "id": 16,
+      "createdAt": "2026-06-17T10:51:48.983Z"
+    },
+    {
+      "pet_id": 3,
+      "weight": 30,
+      "date": "2026-05-17",
+      "note": "",
+      "id": 17,
+      "createdAt": "2026-06-17T10:51:48.984Z"
+    },
+    {
+      "pet_id": 3,
+      "weight": 31,
+      "date": "2026-06-17",
+      "note": "最近体重",
+      "id": 18,
+      "createdAt": "2026-06-17T10:51:48.984Z"
+    }
+  ],
+  "vaccineRecords": [
+    {
+      "pet_id": 1,
+      "name": "猫三联",
+      "date": "2025-08-21",
+      "next_date": "2026-07-17",
+      "hospital": "萌宠乐园宠物医院",
+      "note": "年度疫苗",
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.985Z"
+    },
+    {
+      "pet_id": 1,
+      "name": "狂犬疫苗",
+      "date": "2025-08-21",
+      "next_date": "2026-09-15",
+      "hospital": "萌宠乐园宠物医院",
+      "note": "年度疫苗",
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.985Z"
+    },
+    {
+      "pet_id": 3,
+      "name": "犬六联",
+      "date": "2025-08-21",
+      "next_date": "2026-07-02",
+      "hospital": "萌宠乐园宠物医院",
+      "note": "年度疫苗",
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.986Z"
+    },
+    {
+      "pet_id": 3,
+      "name": "狂犬疫苗",
+      "date": "2025-08-21",
+      "next_date": "2026-08-16",
+      "hospital": "萌宠乐园宠物医院",
+      "note": "年度疫苗",
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.986Z"
+    }
+  ],
+  "dewormingRecords": [
+    {
+      "pet_id": 1,
+      "type": "internal",
+      "date": "2026-03-19",
+      "next_date": "2026-07-07",
+      "product": "拜耳拜宠清",
+      "note": "常规驱虫",
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.987Z"
+    },
+    {
+      "pet_id": 1,
+      "type": "external",
+      "date": "2026-03-19",
+      "next_date": "2026-06-27",
+      "product": "福来恩",
+      "note": "常规驱虫",
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.987Z"
+    },
+    {
+      "pet_id": 3,
+      "type": "internal",
+      "date": "2026-03-19",
+      "next_date": "2026-07-12",
+      "product": "拜耳拜宠清",
+      "note": "常规驱虫",
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.988Z"
+    },
+    {
+      "pet_id": 3,
+      "type": "external",
+      "date": "2026-03-19",
+      "next_date": "2026-06-22",
+      "product": "福来恩",
+      "note": "常规驱虫",
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.988Z"
+    }
+  ],
+  "places": [
+    {
+      "name": "萌宠乐园宠物医院",
+      "type": "hospital",
+      "address": "北京市朝阳区建国路88号SOHO现代城A座1层",
+      "phone": "010-12345678",
+      "business_hours": "周一至周日 09:00-21:00",
+      "description": "专业宠物医院，设备先进，医生团队经验丰富。提供24小时急诊服务，科室齐全。",
+      "rating": 4.8,
+      "review_count": 156,
+      "lat": 39.9042,
+      "lng": 116.4074,
+      "created_by": 2,
+      "is_approved": 1,
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.989Z"
+    },
+    {
+      "name": "爱心宠物寄养中心",
+      "type": "boarding",
+      "address": "北京市海淀区中关村大街1号",
+      "phone": "010-87654321",
+      "business_hours": "周一至周日 08:00-20:00",
+      "description": "家庭式寄养环境，专人24小时照顾，每天遛狗3次，提供视频监控。独立房间，避免交叉感染。",
+      "rating": 4.9,
+      "review_count": 89,
+      "lat": 39.9842,
+      "lng": 116.3074,
+      "created_by": 3,
+      "is_approved": 1,
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.990Z"
+    },
+    {
+      "name": "毛孩咖啡",
+      "type": "friendly",
+      "address": "北京市西城区西单北大街100号",
+      "phone": "010-55667788",
+      "business_hours": "周一至周日 10:00-22:00",
+      "description": "宠物友好咖啡馆，欢迎携带宠物入内。提供宠物专属菜单，有宠物玩耍区域。",
+      "rating": 4.7,
+      "review_count": 234,
+      "lat": 39.9142,
+      "lng": 116.3674,
+      "created_by": 1,
+      "is_approved": 1,
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.992Z"
+    },
+    {
+      "name": "爱康宠物医院",
+      "type": "hospital",
+      "address": "北京市东城区东直门外大街50号",
+      "phone": "010-66778899",
+      "business_hours": "周一至周日 24小时",
+      "description": "24小时宠物急诊中心，配备先进的医疗设备，专业团队，价格透明。",
+      "rating": 4.6,
+      "review_count": 312,
+      "lat": 39.9442,
+      "lng": 116.4374,
+      "created_by": 2,
+      "is_approved": 1,
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.993Z"
+    },
+    {
+      "name": "狗狗乐园寄养",
+      "type": "boarding",
+      "address": "北京市通州区新华大街200号",
+      "phone": "010-33445566",
+      "business_hours": "周一至周日 07:00-21:00",
+      "description": "大型宠物寄养基地，有户外活动场地，狗狗可以自由奔跑。专业训犬师管理。",
+      "rating": 4.5,
+      "review_count": 178,
+      "lat": 39.9242,
+      "lng": 116.6574,
+      "created_by": 3,
+      "is_approved": 1,
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.994Z"
+    }
+  ],
+  "placeImages": [
+    {
+      "place_id": 1,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=veterinary%20clinic%20interior%2C%20clean%20and%20professional&image_size=landscape_4_3",
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.989Z"
+    },
+    {
+      "place_id": 1,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=veterinary%20clinic%20interior%2C%20clean%20and%20professional&image_size=landscape_4_3",
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.990Z"
+    },
+    {
+      "place_id": 2,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=pet%20boarding%20facility%2C%20cozy%20and%20clean&image_size=landscape_4_3",
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.991Z"
+    },
+    {
+      "place_id": 2,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=pet%20boarding%20facility%2C%20cozy%20and%20clean&image_size=landscape_4_3",
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.991Z"
+    },
+    {
+      "place_id": 3,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=pet%20friendly%20cafe%2C%20warm%20atmosphere&image_size=landscape_4_3",
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.992Z"
+    },
+    {
+      "place_id": 3,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=pet%20friendly%20cafe%2C%20warm%20atmosphere&image_size=landscape_4_3",
+      "id": 6,
+      "createdAt": "2026-06-17T10:51:48.992Z"
+    },
+    {
+      "place_id": 4,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=veterinary%20clinic%20interior%2C%20clean%20and%20professional&image_size=landscape_4_3",
+      "id": 7,
+      "createdAt": "2026-06-17T10:51:48.993Z"
+    },
+    {
+      "place_id": 5,
+      "image": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=pet%20boarding%20facility%2C%20cozy%20and%20clean&image_size=landscape_4_3",
+      "id": 8,
+      "createdAt": "2026-06-17T10:51:48.994Z"
+    }
+  ],
+  "reviews": [
+    {
+      "place_id": 1,
+      "user_id": 1,
+      "rating": 4,
+      "content": "医生非常专业，检查很仔细，收费也合理。我家猫在这里做的绝育，恢复得很好。",
+      "id": 1,
+      "createdAt": "2026-06-17T10:51:48.995Z"
+    },
+    {
+      "place_id": 1,
+      "user_id": 2,
+      "rating": 5,
+      "content": "环境很干净，没有异味。前台小姐姐态度很好，解答了我很多问题。",
+      "id": 2,
+      "createdAt": "2026-06-17T10:51:48.995Z"
+    },
+    {
+      "place_id": 2,
+      "user_id": 2,
+      "rating": 5,
+      "content": "24小时急诊真的太重要了！我家狗半夜突发疾病，及时得到了救治。",
+      "id": 3,
+      "createdAt": "2026-06-17T10:51:48.996Z"
+    },
+    {
+      "place_id": 2,
+      "user_id": 3,
+      "rating": 5,
+      "content": "寄养过两次，狗狗每次都很开心。每天都有视频，很放心。",
+      "id": 4,
+      "createdAt": "2026-06-17T10:51:48.996Z"
+    },
+    {
+      "place_id": 3,
+      "user_id": 3,
+      "rating": 5,
+      "content": "场地很大，狗狗可以跑跳。工作人员很负责，会按时喂饭遛狗。",
+      "id": 5,
+      "createdAt": "2026-06-17T10:51:48.997Z"
+    },
+    {
+      "place_id": 3,
+      "user_id": 4,
+      "rating": 4,
+      "content": "带猫来喝咖啡，猫主子很开心。环境布置得很可爱，适合拍照。",
+      "id": 6,
+      "createdAt": "2026-06-17T10:51:48.997Z"
+    },
+    {
+      "place_id": 4,
+      "user_id": 4,
+      "rating": 4,
+      "content": "宠物菜单很用心，我家狗吃得很欢。店员也都很喜欢小动物。",
+      "id": 7,
+      "createdAt": "2026-06-17T10:51:48.998Z"
+    },
+    {
+      "place_id": 4,
+      "user_id": 5,
+      "rating": 5,
+      "content": "医生非常专业，检查很仔细，收费也合理。我家猫在这里做的绝育，恢复得很好。",
+      "id": 8,
+      "createdAt": "2026-06-17T10:51:48.998Z"
+    },
+    {
+      "place_id": 5,
+      "user_id": 5,
+      "rating": 5,
+      "content": "环境很干净，没有异味。前台小姐姐态度很好，解答了我很多问题。",
+      "id": 9,
+      "createdAt": "2026-06-17T10:51:48.999Z"
+    },
+    {
+      "place_id": 5,
+      "user_id": 1,
+      "rating": 4,
+      "content": "24小时急诊真的太重要了！我家狗半夜突发疾病，及时得到了救治。",
+      "id": 10,
+      "createdAt": "2026-06-17T10:51:48.999Z"
+    }
+  ],
+  "reviewImages": []
+}
