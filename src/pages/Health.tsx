@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   HeartPulse, Plus, AlertCircle, Calendar, Syringe, Pill, 
@@ -9,13 +9,14 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import Layout from '../components/Layout';
 import { healthApi, petApi } from '../api';
 import type { HealthReminder, Pet } from '../types';
-import { formatDate, calculateDaysUntil } from '../utils';
+import { formatDate, formatDateTime, calculateDaysUntil } from '../utils';
 import { useAuthStore } from '../store/auth';
 import { cn } from '../lib/utils';
 
 export default function Health() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
+  const location = useLocation();
   const petIdParam = searchParams.get('petId');
   const { isAuthenticated } = useAuthStore();
   const [activeTab, setActiveTab] = useState<'overview' | 'vaccine' | 'deworming' | 'weight'>('overview');
@@ -35,7 +36,7 @@ export default function Health() {
       return;
     }
     loadData();
-  }, [isAuthenticated]);
+  }, [isAuthenticated, location.key]);
 
   useEffect(() => {
     if (pets.length > 0) {
@@ -307,7 +308,12 @@ export default function Health() {
                     <div key={record.id} className="p-4 bg-neutral-50 rounded-2xl">
                       <div className="flex items-center justify-between mb-2">
                         <div className="font-semibold text-neutral-800">{record.name}</div>
-                        <div className="text-sm text-neutral-500">{formatDate(record.date)}</div>
+                        <div className="text-right">
+                          <div className="text-sm text-neutral-500">{formatDate(record.date)}</div>
+                          {record.createdAt && (
+                            <div className="text-xs text-neutral-400">{formatDateTime(record.createdAt)}</div>
+                          )}
+                        </div>
                       </div>
                       {record.hospital && (
                         <div className="text-sm text-neutral-500 mb-1">医院：{record.hospital}</div>
@@ -341,7 +347,12 @@ export default function Health() {
                         <div className="font-semibold text-neutral-800">
                           {record.type === 'internal' ? '体内驱虫' : '体外驱虫'}
                         </div>
-                        <div className="text-sm text-neutral-500">{formatDate(record.date)}</div>
+                        <div className="text-right">
+                          <div className="text-sm text-neutral-500">{formatDate(record.date)}</div>
+                          {record.createdAt && (
+                            <div className="text-xs text-neutral-400">{formatDateTime(record.createdAt)}</div>
+                          )}
+                        </div>
                       </div>
                       {record.product && (
                         <div className="text-sm text-neutral-500 mb-1">药物：{record.product}</div>
@@ -373,7 +384,12 @@ export default function Health() {
                     <div key={record.id} className="p-4 bg-neutral-50 rounded-2xl flex items-center justify-between">
                       <div>
                         <div className="font-semibold text-neutral-800">{record.weight} kg</div>
-                        <div className="text-sm text-neutral-500">{formatDate(record.date)}</div>
+                        <div className="text-sm text-neutral-500">
+                          {formatDate(record.date)}
+                          {record.createdAt && (
+                            <span className="text-neutral-400 text-xs ml-2">{formatDateTime(record.createdAt)}</span>
+                          )}
+                        </div>
                       </div>
                       {record.note && (
                         <div className="text-sm text-neutral-500">{record.note}</div>

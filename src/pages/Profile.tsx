@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   ArrowLeft, User as UserIcon, Cat, Heart, Newspaper, Award, 
@@ -16,6 +16,7 @@ import PostCard from '../components/PostCard';
 export default function Profile() {
   const { userId } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const { user: currentUser, isAuthenticated } = useAuthStore();
   const [activeTab, setActiveTab] = useState<'posts' | 'pets' | 'favorites'>('posts');
   const [profileUser, setProfileUser] = useState<User | null>(null);
@@ -31,7 +32,7 @@ export default function Profile() {
   useEffect(() => {
     if (!userId) return;
     loadProfile();
-  }, [userId]);
+  }, [userId, location.key]);
 
   useEffect(() => {
     if (!userId) return;

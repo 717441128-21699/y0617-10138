@@ -111,16 +111,17 @@ export default function PetForm() {
           ...formData,
           avatar: avatarUrl,
         });
+        navigate(`/pets/${petId}`, { replace: true });
       } else {
         await petApi.create({
           ...formData,
           avatar: avatarUrl,
         });
-      }
-      if (fromRegister) {
-        navigate('/', { replace: true });
-      } else {
-        navigate('/pets');
+        if (fromRegister) {
+          navigate('/', { replace: true });
+        } else {
+          navigate('/pets', { replace: true });
+        }
       }
     } catch (e: any) {
       alert(e.response?.data?.error || '保存失败，请重试');
@@ -146,7 +147,7 @@ export default function PetForm() {
       <div className="max-w-2xl mx-auto space-y-6">
         <div className="flex items-center gap-4">
           <button
-            onClick={() => navigate(fromRegister ? '/' : (isEdit && petId ? `/pets/${petId}` : '/pets'))}
+            onClick={() => navigate(fromRegister ? '/' : (isEdit && petId ? `/pets/${petId}` : '/pets'), { replace: true })}
             className="p-2 hover:bg-white rounded-full transition-colors"
           >
             <ArrowLeft className="w-5 h-5 text-neutral-600" />

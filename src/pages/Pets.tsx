@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useState, useEffect, useCallback } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Plus, Calendar, HeartPulse, Camera, Edit2, Trash2 } from 'lucide-react';
 import Layout from '../components/Layout';
@@ -12,6 +12,7 @@ export default function Pets() {
   const [pets, setPets] = useState<Pet[]>([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
+  const location = useLocation();
   const { isAuthenticated } = useAuthStore();
 
   useEffect(() => {
@@ -20,7 +21,7 @@ export default function Pets() {
       return;
     }
     loadPets();
-  }, [isAuthenticated]);
+  }, [isAuthenticated, location.key]);
 
   const loadPets = async () => {
     setLoading(true);
@@ -60,7 +61,7 @@ export default function Pets() {
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            onClick={() => navigate('/pets/create')}
+            onClick={() => navigate('/pets/new')}
             className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-2xl font-medium hover:shadow-warm-lg transition-all"
           >
             <Plus className="w-5 h-5" />
@@ -82,7 +83,7 @@ export default function Pets() {
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => navigate('/pets/create')}
+              onClick={() => navigate('/pets/new')}
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-2xl font-medium hover:shadow-warm-lg transition-all"
             >
               <Plus className="w-5 h-5" />

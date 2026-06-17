@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Calendar, Plus, Camera, HeartPulse, Edit2 } from 'lucide-react';
 import Layout from '../components/Layout';
@@ -11,6 +11,7 @@ import { useAuthStore } from '../store/auth';
 export default function PetDetail() {
   const { petId } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const [pet, setPet] = useState<Pet | null>(null);
   const [loading, setLoading] = useState(true);
   const { isAuthenticated } = useAuthStore();
@@ -21,7 +22,7 @@ export default function PetDetail() {
       return;
     }
     loadPet();
-  }, [petId, isAuthenticated]);
+  }, [petId, isAuthenticated, location.key]);
 
   const loadPet = async () => {
     if (!petId) return;
@@ -173,7 +174,7 @@ export default function PetDetail() {
               <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-200 to-secondary-200"></div>
               
               <div className="space-y-8">
-                {[...pet.photos].reverse().map((photo, idx) => (
+                {pet.photos.map((photo, idx) => (
                   <motion.div
                     key={photo.id}
                     initial={{ opacity: 0, x: -20 }}
@@ -197,7 +198,7 @@ export default function PetDetail() {
                           <span>{formatDate(photo.date)}</span>
                           {photo.createdAt && (
                             <span className="text-neutral-400 text-xs">
-                              · {formatDateTime(photo.createdAt)}
+                              {formatDateTime(photo.createdAt)}
                             </span>
                           )}
                         </div>
